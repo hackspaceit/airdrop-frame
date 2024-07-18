@@ -35,22 +35,22 @@ async function getResponse(req: NextRequest): Promise<NextResponse> {
       buttons: [
         {
           action: 'link',
-          label: 'Join Odyssey',
-          target: `https://odyssey.unite.io/dashboard?referralCode=20d5d0c7`,
+          label: 'Claim Now',
+          target: `https://ref.mode.network/Ta9ymI`,
         },
         {
           action: 'link',
-          label: 'Zealy Task',
-          target: 'https://zealy.io/cw/unite/invite/CY6L_ngZAcK7QTLeAz-LW',
+          label: 'Earn OP',
+          target: 'https://ref.mode.network/Ta9ymI',
         },
         {
           label: `Next`,
-          target: `${NEXT_PUBLIC_URL}/api/frame-2`,
+          target: `${NEXT_PUBLIC_URL}/api/frame-3`,
          
         },
       ],
       image: {
-        src: `${NEXT_PUBLIC_URL}/unite.png`,
+        src: `${NEXT_PUBLIC_URL}/mode.png`,
       },
       postUrl: `${NEXT_PUBLIC_URL}/api/frame`,
       
