@@ -52,7 +52,7 @@ async function getResponse(req: NextRequest): Promise<NextResponse> {
       image: {
         src: `${NEXT_PUBLIC_URL}/superfest.png`,
       },
-      postUrl: `${NEXT_PUBLIC_URL}/api/frame-4`,
+      postUrl: `${NEXT_PUBLIC_URL}/api/frame-5`,
       
     }),
   );

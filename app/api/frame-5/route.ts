@@ -42,7 +42,7 @@ async function getResponse(req: NextRequest): Promise<NextResponse> {
         {
             action: 'link',
           label: `Join Telegram Airdrop`,
-          target: `${NEXT_PUBLIC_URL}/api/frame-4`,
+          target: `${NEXT_PUBLIC_URL}/api/frame-5`,
          
         },
       ],
