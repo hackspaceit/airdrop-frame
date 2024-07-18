@@ -45,12 +45,13 @@ async function getResponse(req: NextRequest): Promise<NextResponse> {
         },
         {
           label: `Next`,
-          target: `${NEXT_PUBLIC_URL}/api/frame-2`,
+          target: `${NEXT_PUBLIC_URL}/api/frame2`,
          
         },
       ],
       image: {
         src: `${NEXT_PUBLIC_URL}/unite.png`,
+        aspectRatio: '1.91:1',
       },
       postUrl: `${NEXT_PUBLIC_URL}/api/frame`,
       
