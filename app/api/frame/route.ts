@@ -34,7 +34,9 @@ async function getResponse(req: NextRequest): Promise<NextResponse> {
     getFrameHtmlResponse({
       buttons: [
         {
-          label: `State: ${state?.page || 0}`,
+          action: 'link',
+          label: 'Join Now',
+          target: `https://zora.co/collect/base:0x5d20bc7ede3858e340887a2cde0db030fc37af2d/1`,
         },
         {
           action: 'link',
@@ -42,18 +44,16 @@ async function getResponse(req: NextRequest): Promise<NextResponse> {
           target: 'https://onchainkit.xyz',
         },
         {
-          action: 'post_redirect',
-          label: 'Dog pictures',
+          label: `Next`,
+          target: `${NEXT_PUBLIC_URL}/api/frame-2`,
+         
         },
       ],
       image: {
-        src: `${NEXT_PUBLIC_URL}/park-1.png`,
+        src: `${NEXT_PUBLIC_URL}/unite.png`,
       },
       postUrl: `${NEXT_PUBLIC_URL}/api/frame`,
-      state: {
-        page: state?.page + 1,
-        time: new Date().toISOString(),
-      },
+      
     }),
   );
 }
