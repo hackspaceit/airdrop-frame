@@ -5,22 +5,15 @@ import { NEXT_PUBLIC_URL } from './config';
 const frameMetadata = getFrameMetadata({
   buttons: [
     {
-      label: 'Story time',
+      label: 'Get & Claim Airdrop',
     },
-    {
-      action: 'tx',
-      label: 'Send Base Sepolia',
-      target: `${NEXT_PUBLIC_URL}/api/tx`,
-      postUrl: `${NEXT_PUBLIC_URL}/api/tx-success`,
-    },
+    
   ],
   image: {
-    src: `${NEXT_PUBLIC_URL}/park-3.png`,
-    aspectRatio: '1:1',
+    src: `${NEXT_PUBLIC_URL}/banner.png`,
+    aspectRatio: '1.91:1',
   },
-  input: {
-    text: 'Tell me a story',
-  },
+  
   postUrl: `${NEXT_PUBLIC_URL}/api/frame`,
 });
 
@@ -29,7 +22,7 @@ export const metadata: Metadata = {
   description: 'LFG',
   openGraph: {
     title: 'zizzamia.xyz',
-    description: 'LFG',
+    description: '5 Potential Airdrop',
     images: [`${NEXT_PUBLIC_URL}/park-1.png`],
   },
   other: {
