@@ -35,16 +35,20 @@ async function getResponse(req: NextRequest): Promise<NextResponse> {
     getFrameHtmlResponse({
       buttons: [
         {
-            action: 'link',
-            label: 'Mint',
-            target: `https://zora.co/collect/base:0x5d20bc7ede3858e340887a2cde0db030fc37af2d/2`,
-            
-          },
-
-          {
-            label: `Next`,
-            target: `${NEXT_PUBLIC_URL}/api/frame-3`,
-          },
+          action: 'link',
+          label: 'Join Odyssey',
+          target: `https://odyssey.unite.io/dashboard?referralCode=20d5d0c7`,
+        },
+        {
+          action: 'link',
+          label: 'Zealy Task',
+          target: 'https://zealy.io/cw/unite/invite/CY6L_ngZAcK7QTLeAz-LW',
+        },
+        {
+          label: `Next`,
+          target: `${NEXT_PUBLIC_URL}/app/frame2`,
+         
+        },
       ],
      
       image: {
